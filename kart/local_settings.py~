@@ -1,0 +1,22 @@
+DEBUG = True
+
+# Make these unique, and don't share it with anybody.
+SECRET_KEY = "46b60e6c-7206-4ba6-96c2-e10439a0bc5197240e22-9206-4e43-bab5-7e45e6491462b3269587-e44f-4ccb-ac65-9209e3195d00"
+NEVERCACHE_KEY = "1cf20a2b-941f-4ec5-bf89-74f8807f0d30986fe02d-8aee-49b0-a042-d64d93d639ac890fafd5-f6ca-4879-9e72-a337584ffb37"
+
+DATABASES = {
+    "default": {
+        # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+        "ENGINE": "django.db.backends.mysql",
+        # DB name or path to database file if using sqlite3.
+        "NAME": "anandkart_db",
+        # Not used with sqlite3.
+        "USER": "root",
+        # Not used with sqlite3.
+        "PASSWORD": "admin",
+        # Set to empty string for localhost. Not used with sqlite3.
+        "HOST": "127.0.0.1",
+        # Set to empty string for default. Not used with sqlite3.
+        "PORT": "",
+    }
+}
